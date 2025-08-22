@@ -12,11 +12,11 @@ export default function Home() {
 
   // 抽奖图片数组 - 可以自定义
   const lotteryImages = [
-    { src: '/images/1.png', alt: '奖品1', name: 'asd' },
-    { src: '/images/2.png', alt: '奖品2', name: 'Vercel' },
-    { src: '/images/3.png', alt: '奖品3', name: 'Globe' },
-    { src: '/images/1.png', alt: '奖品4', name: 'File' },
-    { src: '/images/2.png', alt: '奖品5', name: 'Window' },
+    { src: '/images/award/1.png', alt: '奖品1', name: 'asd' },
+    { src: '/images/award/2.png', alt: '奖品2', name: 'Vercel' },
+    { src: '/images/award/3.png', alt: '奖品3', name: 'Globe' },
+    { src: '/images/award/1.png', alt: '奖品4', name: 'File' },
+    { src: '/images/award/2.png', alt: '奖品5', name: 'Window' },
   ];
 
   // 抽奖滚动逻辑
@@ -60,7 +60,7 @@ export default function Home() {
                     }`}>
                       <div className="text-center">
                         <Image 
-                          src={currentIndex === -1 ? '/images/default.png' : lotteryImages[currentIndex].src}
+                          src={currentIndex === -1 ? '/images/award/default.png' : lotteryImages[currentIndex].src}
                           alt={currentIndex === -1 ? '神秘大奖' : lotteryImages[currentIndex].alt}
                           width={120}
                           height={120}
